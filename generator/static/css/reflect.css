@@ -1,0 +1,30 @@
+
+  *{
+    margin:0;
+    padding:0;
+  }
+  
+  body{
+    margin:0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size:17px;
+    color:#eeeeee;
+    line-height:1.6;
+  }
+  div {
+    opacity: 0.7;
+  }
+  #pass{color:#f30e0e;}
+  #showcase{
+    background-image:url('https://gameranx.com/wp-content/uploads/2019/11/DEATH-STRANDING_20191108203319.jpg');
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 20px;
+  }
+  

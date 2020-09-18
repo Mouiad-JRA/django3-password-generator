@@ -1,0 +1,47 @@
+{% load static %}
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<link rel="stylesheet" href="{% static 'css/home.css' %}" />
+
+</head>
+
+<body>
+
+<header id="showcase">
+  <h1   id="pass">Password Generator</h1>
+<div class="container text-center">
+
+
+<form action="{% url 'Password' %}">
+<select name="length" >
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  <option value="11">11</option>
+  <option value="12" selected="selected">12</option>
+  <option value="13">13</option>
+  <option value="14">14</option>
+  <option value="15">15</option>
+
+</select> Length
+<br>
+<input type="checkbox" name="uppercase"> Uppercase
+<br>
+<input type="checkbox" name="number"> Number
+<br>
+<input type="checkbox" name="Special"> Special
+<br>
+<input  type="submit" value="Generate Password" class="btn btn-dark"> 
+
+</form>
+
+</div>
+
+</header>
+
+</body>
+
+</html>
